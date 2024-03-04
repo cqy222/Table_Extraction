@@ -98,7 +98,7 @@ export default {
           temperature: 0.5,
         };
         const headers = {
-          Authorization: "Bearer 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" // 请替换为您的实际 API 密钥
+          Authorization: "Bearer API-KEY" // 请替换为您的实际 API 密钥
         };
         const response = await axios.post("https://api.openai.com/v1/chat/completions", body, { headers });
         this.dialogContent = response.data.choices[0].message.content; // 将返回的数据存储在 dialogContent 中
@@ -119,7 +119,7 @@ export default {
         temperature: 0.5,
       };
       const headers = {
-        Authorization: "Bearer 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" // 请替换为您的实际 API 密钥
+        Authorization: "Bearer API-KEY" // 请替换为您的实际 API 密钥
       };
       try {
         const response = await axios.post("https://api.openai.com/v1/chat/completions", body, { headers });
